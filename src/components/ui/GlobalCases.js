@@ -12,11 +12,19 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2),
         textAlign: 'center',
         color: theme.palette.text.secondary,
+        transition:"all 0.4s",
+        '&:hover':{
+            borderColor:"red",
+            transform: "translateY(-40px) Scale(1.2)",
+            backgroundColor:theme.palette.secondary.light,
+            fontSize:"1.2rem"
+        }
     },
     cardsContainer: {
         marginTop: "1em",
         marginLeft:"1em"
     }
+    
 }));
 
 export default function GlobalCases() {

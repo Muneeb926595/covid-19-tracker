@@ -24,6 +24,13 @@ const useStyles = makeStyles((theme) => ({
         marginTop: "2em",
         marginLeft: "1em",
         height:"100%"
+    },
+    tblrow:{
+        transition:"all 0.4s",
+        '&:hover':{
+            transform: "translateY(-20px) Scale(1.011)",
+            backgroundColor:theme.palette.secondary.light
+        }
     }
 }));
 
@@ -60,7 +67,7 @@ export default function AllCountries() {
                     <TableBody>
                         {globalData.map((val, index) => {
                             return (
-                                <TableRow key={index}>
+                                <TableRow key={index} className={classes.tblrow}>
                                     <TableCell align="left">{index}</TableCell>
                                     <TableCell align="left">{val.title}</TableCell>
                                     <TableCell align="left">{val.total_cases}</TableCell>
