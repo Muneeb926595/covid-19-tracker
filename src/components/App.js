@@ -6,7 +6,7 @@ import theme from './ui/Theme';
 import Home from './ui/Home';
 import BottomNavbar from './ui/BottomNavbar';
 function App() {
-  const screenConfig = React.useState(0);
+  const screenConfig = useState(0);
   return (
     <React.Fragment>
       <ThemeProvider theme={theme}>
